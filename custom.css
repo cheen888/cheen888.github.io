@@ -2,9 +2,7 @@
     background-image: url("images/jumbotron-800x400.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
-    color: black;
-    text-shadow: 2px 2px 3px lightgray;
+    background-position: center;
 }
 
 .fade{
