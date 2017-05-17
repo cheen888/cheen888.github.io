@@ -1,0 +1,19 @@
+.my-jumbotron-bg{
+    background-image: url("Images/jumbotron-clearsky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: white;
+    text-shadow: 2px 2px 2px darkslategrey;
+}
+
+.fade{
+   opacity: 0.6;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fade:hover{
+    opacity: 1;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap: style your page like twitter -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- theme files: used to style over default bootstrap -->
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+     <link rel="stylesheet" type="text/css" href="theme4.css"> 
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- animate.css: used to apply quick css animations -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    
+    <!--our own custom css overrides-->
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- use this style for testing and development purposes only -->
+    <!--<style type="text/css">
+    .container{border: 2px dotted green;}
+    .row{border: 1px dotted red;}
+    .row [class*=' col-']{border: 2px dotted purple;}
+    </style>-->
+    
+</head>
+<body>
+
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+    <nav class="navbar navbar-default navbar-fixed-top fade">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- hamburger button. do not touch! -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+                <a class="navbar-brand" href="#">
+                    <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                    <!--<i class="fa fa-telegram"></i>-->
+                    <img src="Images/company_logo.png" alt="company logo" height="30px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- THIS UL HANDLES OUR LINKS -->
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="http://facebook.com">About Us</a></li>
+                    <li><a href="http://facebook.com">Place to Go</a></li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://facebook.com">
+                            <i class="fa fa-shopping-cart fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://facebook.com">
+                            <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- row1: jumbotron -->
+        <div class="row">
+            <!--splash across screen for ALL devices - occupy all 12 columns -->
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                <div class="jumbotron my-jumbotron-bg animated bounce">
+                    <h1>Assumenda Optio Quia</h1>
+                    <p>Perspiciatis totam, voluptatibus illo iusto praesentium harum.</p>
+                    <p><a class="btn btn-primary btn-lg" href="#">Learn more</a></p>
+                </div>
+            </div>
+            <!--end of columnn-->
+        </div>
+        <!--end of row1-->
+
+        <!-- row2: thumbnails -->
+        <div class="row">
+            <!--col1-->
+            <!--for phones, display across 12 grid; all other devices, display 4 grids of screen -->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="thumbnail">
+                    <img src="Images/thumb-beach-600x300.jpg" alt="Deck chair on sandy beach" class="img-responsive">
+                    <div class="caption">
+                        <h3>Thumbnail 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda optio quia deleniti provident repellat iste incidunt! Quia nulla, atque. Perspiciatis totam, voluptatibus illo iusto praesentium harum, atque labore ipsa excepturi.</p>
+                        <a href="#" class="btn btn-primary">Button 1</a>
+                    </div>
+                </div>
+            </div>
+            <!--end of col1-->
+
+            <!--col2-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="thumbnail">
+                    <img src="Images/thumb-bike-trail-300x150.jpg" alt="Cyclist on forest trail" class="img-responsive">
+                    <div class="caption">
+                        <h3>Thumbnail 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam accusantium distinctio, libero tempora perferendis sequi recusandae. Est molestias id perferendis non, consequatur tempora officiis vitae architecto ad debitis laboriosam obcaecati.</p>
+                        <a href="#" class="btn btn-primary">Button 2</a>
+                    </div>
+                </div>
+            </div>
+            <!--end of col2-->
+
+            <!--col3-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="thumbnail">
+                    <!--img-responsive only works if image size is bigger-->
+                    <img src="Images/thumb-waterfall-300x150.jpg" alt="Waterfall in forest" class="img-responsive">
+                    <div class="caption">
+                        <h3>Thumbnail 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore iure laboriosam explicabo consequatur similique saepe iusto nulla ipsa voluptatum, aliquam nam necessitatibus corrupti repellat libero sequi, eum non obcaecati. Deleniti.</p>
+                        <a href="#" class="btn btn-primary">Button 3</a>
+                    </div>
+                </div>
+            </div>
+            <!--end of col3-->
+
+        </div>
+        <!--end of row1-->
+        <hr>
+
+        <!--row3-->
+        <div class="row">
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--for video description, add as text. No "alt" attribute-->
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y-NfaXYFzJk">Video of Adventure Times, a popular adult cartoon series on Cartoon Network</iframe>
+                </div>
+            </div>
+        </div>
+        <!--end of row3-->
+        <hr>
+
+        <!--row4: form -->
+        <div class="row">
+            <!--col1-->
+            <div class="col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6">
+                <div class="panel-body">
+                    <form action="https://coderinyou1332.appspot.com/submit" method="post">
+                        <!--HTML label for forms. Comes with a underline -->
+                        <legend class="text-primary">Sign-up Form</legend>
+
+                        <div class="form-group">
+                            <label for="nameField">Name</label>
+                            <input class="form-control" type="text" name="USERNAME" id="nameField" placeholder="Frank Lee">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailField">Email</label>
+                            <input class="form-control" type="email" name="EMAIL" id="emailField" placeholder="frank@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <!--<label for="myRadio1-id">Gender</label><br>
+                            <label for="myRadio1-id">Male</label>
+                            <input type="radio" id="myRadio1-id" name="myRadio" value="male" checked>
+                            <label for="myRadio2-id">Female</label>
+                            <input type="radio" id="myRadio2-id" name="myRadio" value="female">-->
+
+                            <!--unique Bootstrap radio button: button on left, followed by text -->
+                            <label>Gender</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="myRadio" value="male" checked>Male
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="myRadio" value="female">Female
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn btn-primary" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end col1-->
+
+            <!--col2-->
+            <div class="col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6
+                        text-center">
+                <div class="text-primary">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                </div>
+                <hr>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui cum repellendus beatae aperiam optio nobis, deserunt laborum suscipit quasi tenetur, accusamus temporibus ratione. Dicta provident recusandae, eligendi inventore est laborum!</p>
+                    <p>Qui cum repellendus beatae aperiam optio nobis, deserunt laborum suscipit quasi tenetur, accusamus temporibus ratione. Dicta provident recusandae, eligendi inventore est laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!--end of col2-->
+        </div>
+        <!--end of row4-->
+        <hr>
+
+        <!--row5-->
+        <div class="row">
+            <!--col1: table-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="text-primary">
+                    <h3 class="text-center">Opening Hours</h3>
+                </div>
+                <table class="table">
+                    <tr>
+                        <th>
+                            Day
+                        </th>
+                        <th>
+                            Hours
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mon - Thu
+                        </td>
+                        <td>
+                            11am - 11pm
+                        </td>
+                    <tr>
+                        <td>
+                            Fri - Sat
+                        </td>
+                        <td>
+                            10am - 12am
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Sun
+                        </td>
+                        <td>
+                            Closed
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <!--end of col1-->
+
+            <!--col2: map-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="text-primary">
+                    <h3 class="text-center">Our Location</h3>
+                </div>
+                <!--careful not to make map too big that on the phone, user ends up zooming on map-->
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7945112685466!2d103.78525561416929!3d1.2980153990532766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a4fed92dc05%3A0x729440ee2c86a913!2s79+Ayer+Rajah+Crescent%2C+Singapore+139955!5e0!3m2!1sen!2ssg!4v1494998875975">Location on office on map 70 Ayer Rajah Crescent</iframe>
+                </div>
+            </div>
+            <!--end of col2-->
+
+            <!--col3:contact list-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+                <div class="text-primary">
+                    <h3 class="text-center">Contact Us</h3>
+                </div>
+
+                <div class="list-group">
+                    <!--"&nbsp" is HTML code for spacing-->
+                    <a class="list-group-item" href="#">
+                        <i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+                        &nbsp; +65 8888.8888
+                    </a>
+                    <a class="list-group-item" href="#">
+                        <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+                        &nbsp; contactus@outdoor-adventures.com
+                    </a>
+                    <a class="list-group-item" href="http://www.outdoor-adventures.com">
+                        <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                        &nbsp; www.outdoor-adventures.com
+                    </a>
+                </div>
+            </div>
+            <!--end of col3-->
+        </div>
+        <hr>
+
+        <!--row6-->
+        <div class="row">
+            <!--col1: table-->
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                <!--wow (which is JS) is a CSS class that depends on animate.js-->
+                <ul class="list-inline text-center wow bounce">
+                    <li>
+                        <a href="http://www.facebook.com">
+                            <i class="fa fa-facebook-square fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com">
+                            <i class="fa fa-twitter-square fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com">
+                            <i class="fa fa-instagram fa-4x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--end of row6-->
+
+    </div>
+
+    <!-- jquery: used by bootstrap.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- bootstrap js: used to run fancy components like carousel -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- wow.js: used to make animate.css run on view -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <!--initialise wow to work-->
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
